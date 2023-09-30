@@ -1,0 +1,97 @@
+Use Case
+
+Test Cases - Procedural
+
+1- Access to the "Eletrônicos" menu 
+
+        Steps
+            1 - Access the home page of the Amazon.com.br website
+        Expected Result
+            The website should be correctly displayed 
+
+            2 Navigate to the "Eletrônicos" menu
+        Expected Result
+            Verify if the page title displays "Eletrônicos e Tecnologia | Amazon.com.br"
+            Verify if the phrase "Eletrônicos e Tecnologia" appears
+            Verify if the category "Computadores e Informática" is displayed 
+
+2-Product Search Description 
+
+        Steps
+            1 Access the home page of the Amazon.com.br website
+        Expected Result
+            The website should be correctly displayed
+
+            2 Enter the product name "Xbox Series S" in the search field
+            3 Click on the search button 
+        Expected Result
+            The system should display the search results screen, listing the searched product (verify at least one). 
+
+
+Test Cases - Gherkin BDD
+
+Scenario 
+1- Access to the "Eletrônicos" menu
+    Given that I am on the home page of Amazon.com.br 
+    When accessing the "Eletrônicos" menu 
+    Then the page title should be "Eletrônicos e Tecnologia | Amazon.com.br" 
+    And the text "Eletrônicos e Tecnologia" should be displayed on the page 
+    And the category "Computadores e Informática" should be displayed on the page 
+
+
+2-Product Search Access 
+    Given that I am on the home page of Amazon.com.br 
+    When searching for the product "Xbox Series S" 
+    Then the page title should be "Amazon.com.br : Xbox Series S" 
+    And a product from the "Xbox Series S" line should be shown on the page
+
+Test Case 03 - Add Product to Cart 
+[Documentation] This test verifies the addition of a product to the shopping cart
+[Tags] add_to_cart Access the home page of the website Amazon.com.br 
+Enter the product name "Xbox Series S" in the search field 
+Click the search button 
+Verify that the search result lists the product "Console Xbox Series S"
+Add the product "Console Xbox Series S" to the cart 
+Verify that the product "Console Xbox Series S" was successfully added
+
+Test Case 04 - Remove Product from Cart 
+[Documentation] This test verifies the removal of a product from the shopping cart 
+[Tags] remove_from_cart 
+Access the home page of the website Amazon.com.br
+Enter the product name "Xbox Series S" in the search field
+Click the search button 
+Verify that the search result lists the product "Console Xbox Series S" 
+Add the product "Console Xbox Series S" to the cart 
+Verify that the product "Console Xbox Series S" was successfully added 
+Remove the product "Console Xbox Series S" from the cart 
+Verify that the cart is empty
+
+
+
+
+
+Dúvidas:
+1- Por que o comando de print não tira print do produto solicitado quando está nas páginas abaixo mesmo o teste passando como produto está visível
+2- Como reutilizou um resource dentro de um novo arquivo de resource?
+3 - Aparece no print mas o teste diz que não encontrou
+
+Software testing techniques
+Types of testing
+Examples for performance testing, acceptance testing, regression testing
+Test cases for telephone
+Non functional test cases for a telephone
+Telephone load test
+Waterfall model and agile model for testing
+Sprint
+Code to check if the given array is a mirror image of itself
+leadership principles
+coding question
+qa methodologies
+First occurrence of a character in a string.
+Lift test case was present
+Given a string "aaabbbcc", compress it, = "a3b3c2" . Given that output string's length is always smaller than input string, you have do it inplace. No extra space. So i had to answer it
+What is the difference between interface and abstract class?
+1. tell me about yourself 
+2. given a student name, score, age, sort them by score 
+3 design test case for microwave 4 other questions. no offer
+lift testing
