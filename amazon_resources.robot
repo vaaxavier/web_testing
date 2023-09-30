@@ -66,3 +66,41 @@ Remove the product "Console Xbox Series S" from the cart
 
 Verify that the cart is empty
     Wait Until Element Is Visible    ${PRODUCT_REMOVED}    timeout=10s
+
+
+#***************Gherkin Scenarios***************
+Given that I am on the home page of Amazon.com.br 
+    Access the home page of the Amazon.com.br website
+
+When accessing the "Eletrônicos" menu 
+    Navigate to the "Eletrônicos" menu
+
+Then the text "${SENTENCE}" should be displayed on the page
+    Verify if the phrase "${SENTENCE}" appears
+
+And the page title should be "${TITLE}" 
+    Verify if the page title displays "${TITLE}"
+
+And the category "${CATEGORIE_NAME}" should be displayed on the page
+    Verify if the category "${CATEGORIE_NAME}" is displayed
+
+When I enter "${PRODUCT}" in the search field 
+    Enter the product name "${PRODUCT}" in the search field
+
+And I click on the search button
+    Click on the search button
+
+Then I should see "${PRODUCT}" in the search results
+    Verify if the search result lists the product "${PRODUCT}"
+
+When I add "${PRODUCT}" to the cart
+    Add the product "${PRODUCT}" to the cart
+
+Then the product "${PRODUCT}" should be successfully added
+    Verify that the product "${PRODUCT}" was successfully added
+
+When I remove "Console Xbox Series S" from the cart
+    Remove the product "Console Xbox Series S" from the cart
+
+Then the cart should be empty
+    Verify that the cart is empty
